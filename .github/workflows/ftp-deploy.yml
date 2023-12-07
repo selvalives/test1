@@ -18,4 +18,4 @@ jobs:
         with:
           ftp-server: ftp://braderselva.com/git/
           ftp-username: 'braderse'
-          ftp-password: '9;dhuQ96SMpF(6'
+          ftp-password: '9;dhuQ96SMpF(6' 
