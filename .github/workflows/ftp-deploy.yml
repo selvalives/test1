@@ -7,7 +7,7 @@ on:
 
 jobs:
   ftp-deploy:
-    name: Deploy to FTP
+    name: Deploy to FTP 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
