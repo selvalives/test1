@@ -13,10 +13,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: FTP Deploy
-        uses: genietim/ftp-action@releases/v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ftp.braderselva.com
-          user: ${{ secrets.FTP_USERNAME }}
+          server: ftp.braderselva.com
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: "test1"
-          remoteDir: "www/git"
+          protocol: ftps
+          server-dir: public_html/git/
