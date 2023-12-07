@@ -1,4 +1,3 @@
-
 name: FTP Deploy
 on:
   push:
@@ -7,7 +6,7 @@ on:
 
 jobs:
   ftp-deploy:
-    name: Deploy to FTP 
+    name: Deploy to FTP
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -16,6 +15,6 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          ftp-server: ftp://braderselva.com/git/
-          ftp-username: 'braderse'
-          ftp-password: '9;dhuQ96SMpF(6' 
+          ftp-server: ftp://yourftpserver.com/path/to/site
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
